@@ -17,14 +17,14 @@ public class RegistrationController {
     @Autowired
     private UserService userService;
     
-    @CrossOrigin(origins="http://localhost:4200",maxAge=3600)
-    @GetMapping(path="/registration")
-    public String saveUser(@RequestParam String firstName,@RequestParam String lastName,@RequestParam String email,@RequestParam String password,@RequestParam String selectedRole) {
-    	User user = new User(firstName,lastName,email,password,selectedRole);
-    	userService.saveUser(user);
-    	return "User saved";
-    	
-    }
+//    @CrossOrigin(origins="http://localhost:4200",maxAge=3600)
+//    @GetMapping(path="/registration")
+//    public String saveUser(@RequestParam String firstName,@RequestParam String lastName,@RequestParam String email,@RequestParam String password,@RequestParam String selectedRole) {
+//    	User user = new User(firstName,lastName,email,password,selectedRole);
+//    	userService.saveUser(user);
+//    	return "User saved";
+//    	
+//    }
 	
 	
 	@CrossOrigin(origins="http://localhost:4200",maxAge=3600)
